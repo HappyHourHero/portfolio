@@ -22,7 +22,6 @@ function getTimeRemaining(endtime){
       updateClock(); 
   }
   
-initializeClock('time-container', deadline);
 
 let image = document.querySelector('#ian')
 let container = document.querySelector('#curtis-pic')

@@ -12,17 +12,20 @@
 <div class="name-header">
     <h1>Doug Greene</h1>
 </div>
-<div class="links">
-    <ul>
-        <li class= 'nav-list-item'><a href="#about-me">About Me</a> </li>
-        <li class= 'nav-list-item'><a href="#projects">Projects</a></li>
-        <li class= 'nav-list-item'><a href="#skills">Skills</a></li>
-        <li class= 'nav-list-item'><a href="#contact">Contact</a></li>
-    </ul>
-</div>
-</nav>
-<h2 id = 'about-me'>About Me</h2>
 
+<div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#about-me">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+<div id = 'about-me'>
+<div class="about-me-text">
+    <h2>About Me</h2>
     <p>I am Doug Greene. My story is a long one. I graduated from UIUC,
     then went to study in Spain. Later, I worked in HR, then
     worked in Colombia for several years. Now I am studying
@@ -38,20 +41,53 @@
     Various versions have evolved over the years, sometimes by accident, sometimes on purpose 
     (injected humour and the like).</p>
 
-<h2 id='projects'>Projects</h2>
-    <ul>
-        <li>Calculator</li>
-        <li>Etch</li>
-        <li>Bullshit</li>
-    </ul>
-<div id="skills">
-    <h2>Skills</h2>
-    <i class="fab fa-html5 fa-5x"></i>
-    <i class="fab fa-css3 fa-5x"></i>
-    <i class="fab fa-js fa-5x"></i>
-
+    <p class = 'test'>Days until I return to Medellin:<span id="time-container"></span></p>
 
 </div>
 
+<div id="curtis-pic">
+    <img id ='ian' src="./Ian-Curtis.jpg" alt="pic of IC">
+</div>
+</div>
+<div class="projects-container">
+<h2>Projects</h2>
+    <ul class = project-list>
+        <div class="calc-grow">
+            <li>Calculator</li>
+            <i class="fas fa-calculator fa-5x"></i>
+            <p>This project built a functional calculator.</p>
+        </div>
+        <div class="etch-grow">
+            <li>Etch</li>
+            <i class="fa fa-tablet fa-5x" aria-hidden="true"></i>
+            <p>This project built a real etch a sketch</p>
+        </div>
+        <div class="bull-grow">
+            <li>Bull</li>
+            <i class="fas fa-headphones fa-5x"></i>      
+            <p>What did this do?</p>  
+        </div>
+    </ul>
+</div>
+<div id="skills-container">
+    <h2>Skills</h2>
+    <div class="skill-icons">
+        <i class="fab fa-html5 fa-5x"></i>
+        <i class="fab fa-css3 fa-5x"></i>
+        <i class="fab fa-js fa-5x"></i>
+    </div>
+</div>
+
+<div id="mode-switcher">
+    <h3>Toggle Dark/Light Mode</h3>
+    <p>Click the button to toggle between dark and light mode for this page.</p>
+    <button id ='darker'>Toggle dark mode</button>
+
+</div>
+
+<footer>
+    <p>Made with <i class="fas fa-skull"></i> in Georgia</p>
+</footer>
+<script src="./script.js"></script>
 </body>
 </html>
